@@ -7,8 +7,14 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.Editor;
 import hash.SHA2;
 
+/**
+ * SHA-512 Convert
+ */
 public class Sha512Convert extends AnAction {
 
+    /**
+     * @param e AnActionEvent
+     */
     @Override
     public void actionPerformed(AnActionEvent e) {
         Editor editor = e.getData(PlatformDataKeys.EDITOR);

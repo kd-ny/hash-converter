@@ -9,8 +9,14 @@ import hash.SHA2;
 
 import java.security.MessageDigest;
 
+/**
+ * SHA-256 Convert
+ */
 public class Sha256Convert extends AnAction {
 
+    /**
+     * @param e AnActionEvent
+     */
     @Override
     public void actionPerformed(AnActionEvent e) {
         Editor editor = e.getData(PlatformDataKeys.EDITOR);

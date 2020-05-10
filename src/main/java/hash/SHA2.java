@@ -4,6 +4,9 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 
+/**
+ * SHA-2 Converter Class
+ */
 public class SHA2 {
     /**
      * sha256 converter.
