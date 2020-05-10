@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>org.example.HashConverter</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="org.intellij.sdk.action.GroupedActions" text="HashConverter" popup="true">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <!-- Add your actions here -->
+            <action class="Sha256Convert" id="ConvertHashSha256"
+                    text="sha256" description="convert sha256">
+            </action>
+            <action class="Sha512Convert" id="ConvertHashSha512"
+                    text="sha512" description="convert sha512">
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
