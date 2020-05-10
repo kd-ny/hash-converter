@@ -17,6 +17,15 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="org.intellij.sdk.action.GroupedActions" text="HashConverter" popup="true">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <!-- Add your actions here -->
+            <action class="Sha256Convert" id="ConvertHashSha256"
+                    text="sha256" description="convert sha256">
+            </action>
+            <action class="Sha512Convert" id="ConvertHashSha512"
+                    text="sha512" description="convert sha512">
+            </action>
+        </group>
     </actions>
 </idea-plugin>
